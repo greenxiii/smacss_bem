@@ -37,6 +37,6 @@ gulp.task('styles-minify', ['styles-compile'], function() {
 gulp.task('build', ['styles-minify']);
 
 gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('less/*.less', ['styles-compile', bs.reload]);
+  gulp.watch('less/**/*.less', ['styles-minify', bs.reload]);
   gulp.watch('*.html').on('change', bs.reload);
 });
