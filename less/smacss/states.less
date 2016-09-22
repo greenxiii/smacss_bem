@@ -1,0 +1,19 @@
+.right-side {
+	a {
+		&:hover,
+		&:active,
+		&:visited {
+			background-color: lighten(@main-color, 10%);
+		}
+	}
+}
+
+article {
+	.read-more a{
+		&:hover {
+			background: @main-bg;
+			color: @main-color;
+			cursor: pointer;
+		}
+	}
+}

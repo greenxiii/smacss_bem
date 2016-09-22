@@ -1,0 +1,90 @@
+.hero-txt {
+	h1 {
+		font-size: calc(4.6rem + 1vw);
+	    font-family: 'Baloo Tamma', cursive;
+	    color: #752323;
+	}
+	h6 {
+		font-weight: 400;
+		text-transform: lowercase;
+	}
+}
+
+.right-side {
+	float: right;
+	a {
+		display: inline-block;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 20px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 0.8rem;
+		color: @main-bg;
+		cursor: pointer;
+	}
+}
+
+.left-side {
+	float: left;
+	.logo {
+		color: @main-bg;
+		height: 60px;
+		line-height: 60px;
+		font-size: 2rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 0 20px;
+		cursor: pointer;
+	}
+}
+.hot {
+	
+	
+}
+
+article {
+	position: relative;
+	.regular & {
+		background: @main-color;
+	}
+	img {
+		width: 60%;
+		display: inline-block;
+	}
+	.desc {
+		background: fade(@main-color, 90%);
+		width: 40%;
+		float: right;
+		.hot & {
+			width: 50%;
+			right: 0;
+			top: 70px;
+			position: absolute;
+			padding: 0;
+		}
+	}
+	.title {
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		background: fade(@primary-color, 95%);
+		color: @main-bg;
+		padding: 6px 16px;
+	}
+	.txt {
+		color: @main-bg;
+		padding: 13px 20px 0;
+	}
+	.read-more {
+		text-align: center;
+		a {
+			color: @main-bg;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 6px 10px;
+			margin: 20px 0;
+			border: 1px solid @main-bg;
+			display: inline-block;
+		}
+	}
+}
