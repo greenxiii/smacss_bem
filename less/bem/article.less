@@ -1,0 +1,73 @@
+.article {
+	position: relative;
+	margin: 40px 0;
+	background: @main-color;
+	&__img {
+		width: 60%;
+		display: inline-block;
+		@media (max-width: 768px) {
+			width: 100%;
+			display: block;
+		}
+	}
+	&__desc {
+		width: 40%;
+		float: right;
+		&--hot {
+			background: fade(@main-color, 90%);
+			width: 50%;
+			right: 0;
+			top: 70px;
+			position: absolute;
+			padding: 0;
+			@media (max-width: 768px) {
+				width: 100%;
+			    position: relative;
+			    top: auto;
+			    left: auto;
+			    float: none;
+			}
+		}
+		@media (max-width: 768px) {
+			width: 100%;
+		    position: relative;
+		    top: auto;
+		    left: auto;
+		    float: none;
+		}
+	}
+	&__title {
+		font-family: 'Amatic SC', cursive;
+		text-align: center;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		background: fade(@primary-color, 95%);
+		color: @main-bg;
+		padding: 6px 16px;
+	}
+	&__txt {
+		color: @main-bg;
+		padding: 13px 20px 0;
+	}
+	&__read-more-box {
+		text-align: center;
+	}
+	&__read-more-link {
+		color: @main-bg;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 6px 10px;
+		margin: 20px 0;
+		border: 1px solid @main-bg;
+		display: inline-block;
+		&:hover {
+			background: @main-bg;
+			color: @main-color;
+			cursor: pointer;
+		}
+	}
+	&--hot {
+		margin: 100px 0;
+		position: relative;
+	}
+}

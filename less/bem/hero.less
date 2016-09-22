@@ -1,0 +1,23 @@
+.hero {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url( 'https://images.unsplash.com/photo-1472457897821-70d3819a0e24?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb' );
+	background-size: cover;
+	&__item {
+		font-weight: 400;
+		text-transform: lowercase;
+		&--bigger {
+			font-size: calc(4.6rem + 1vw);
+		    font-family: 'Amatic SC', cursive;
+		    color: @primary-color;
+		}
+	}
+	@media (max-width: 960px) {
+		background-position: center right;
+	}
+}

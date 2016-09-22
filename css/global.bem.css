@@ -1,3 +1,231 @@
-.main {
-  color: red;
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f7f7f7;
+  color: #262626;
+  font-size: calc(16px + 0.2vw);
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+h1 {
+  font-size: calc(2.6rem + 1vw);
+}
+h2 {
+  font-size: calc(2rem + 1vw);
+}
+h3 {
+  font-size: calc(1.4rem + 1vw);
+}
+h4 {
+  font-size: calc(1.2rem + 1vw);
+}
+h5 {
+  font-size: calc(1rem + 1vw);
+}
+h6 {
+  font-size: calc(0.8rem + 1vw);
+}
+a,
+a:hover,
+a:link,
+a:visited {
+  -webkit-transition: .25s;
+          transition: .25s;
+  text-decoration: none;
+}
+.navigation {
+  width: 100%;
+  height: 60px;
+  background: #262626;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.navigation__right-side {
+  float: right;
+}
+.navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+.navigation__link:hover,
+.navigation__link:active,
+.navigation__link:visited {
+  background-color: #404040;
+}
+@media (max-width: 400px) {
+  .navigation__link {
+    padding: 0 10px;
+  }
+}
+.navigation__left-side {
+  float: left;
+}
+.navigation__logo {
+  color: #f7f7f7;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 20px;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .navigation__logo {
+    padding: 0 10px;
+  }
+}
+.hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1472457897821-70d3819a0e24?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb');
+  background-size: cover;
+}
+.hero__item {
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.hero__item--bigger {
+  font-size: calc(5.6rem);
+  font-family: 'Amatic SC', cursive;
+  color: #0b8078;
+}
+@media (max-width: 960px) {
+  .hero {
+    background-position: center right;
+  }
+}
+.section {
+  width: 960px;
+  margin: 0 auto;
+}
+@media (max-width: 960px) {
+  .section {
+    width: 100%;
+  }
+}
+.article {
+  position: relative;
+  margin: 40px 0;
+  background: #262626;
+}
+.article__img {
+  width: 60%;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .article__img {
+    width: 100%;
+    display: block;
+  }
+}
+.article__desc {
+  width: 40%;
+  float: right;
+}
+.article__desc--hot {
+  background: rgba(38, 38, 38, 0.9);
+  width: 50%;
+  right: 0;
+  top: 70px;
+  position: absolute;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .article__desc--hot {
+    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    float: none;
+  }
+}
+@media (max-width: 768px) {
+  .article__desc {
+    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    float: none;
+  }
+}
+.article__title {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  background: rgba(11, 128, 120, 0.95);
+  color: #f7f7f7;
+  padding: 6px 16px;
+}
+.article__txt {
+  color: #f7f7f7;
+  padding: 13px 20px 0;
+}
+.article__read-more-box {
+  text-align: center;
+}
+.article__read-more-link {
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  margin: 20px 0;
+  border: 1px solid #f7f7f7;
+  display: inline-block;
+}
+.article__read-more-link:hover {
+  background: #f7f7f7;
+  color: #262626;
+  cursor: pointer;
+}
+.article--hot {
+  margin: 100px 0;
+  position: relative;
+}
+.footer {
+  background: #262626;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 6px 0;
+}
+.footer__item {
+  margin: 0;
 }
