@@ -190,3 +190,31 @@ article .read-more a:hover {
   color: #262626;
   cursor: pointer;
 }
+@media (max-width: 960px) {
+  .hero {
+    background-position: center right;
+  }
+  section {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  article img {
+    width: 100%;
+    display: block;
+  }
+  article .desc,
+  .hot article .desc {
+    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    float: none;
+  }
+}
+@media (max-width: 400px) {
+  .left-side .logo,
+  .right-side a {
+    padding: 0 10px;
+  }
+}
