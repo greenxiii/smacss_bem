@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Baloo+Tamma|PT+Sans';
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC|PT+Sans';
 * {
   box-sizing: border-box;
 }
@@ -88,10 +88,16 @@ section {
 .regular {
   margin: 40px 0;
 }
+footer {
+  background: #262626;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 6px 0;
+}
 .hero-txt h1 {
   font-size: calc(5.6rem);
-  font-family: 'Baloo Tamma', cursive;
-  color: #752323;
+  font-family: 'Amatic SC', cursive;
+  color: #0b8078;
 }
 .hero-txt h6 {
   font-weight: 400;
@@ -147,9 +153,11 @@ article .desc {
   padding: 0;
 }
 article .title {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
   font-size: 2.2rem;
   text-transform: uppercase;
-  background: rgba(117, 35, 35, 0.95);
+  background: rgba(11, 128, 120, 0.95);
   color: #f7f7f7;
   padding: 6px 16px;
 }
@@ -168,6 +176,9 @@ article .read-more a {
   margin: 20px 0;
   border: 1px solid #f7f7f7;
   display: inline-block;
+}
+.footer-txt p {
+  margin: 0;
 }
 .right-side a:hover,
 .right-side a:active,
